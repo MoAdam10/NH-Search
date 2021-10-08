@@ -4,7 +4,7 @@ function SearchResults({ results, searchQuery }) {
   const filteredResults =
     results.length &&
     results.filter((hit) =>
-      hit.title.toLowerCase().includes(searchQuery.toLowerCase())
+      hit.title.toString().toLowerCase().includes(searchQuery.toLowerCase())
     );
 
   return (

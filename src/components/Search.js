@@ -15,10 +15,6 @@ class Search extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() {
-    this.props.fetchData();
-  }
-
   handleInput(e) {
     this.setState({
       searchQuery: e.target.value,
