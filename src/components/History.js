@@ -6,10 +6,10 @@ import { connect } from 'react-redux';
 class History extends React.Component {
 	constructor(props) {
 		super(props);
-		this.getHistory = this.getHistory.bind(this);
+		this.getSearchHistory = this.getSearchHistory.bind(this);
 	}
 
-	getHistory(e) {
+	getSearchHistory(e) {
 		this.props.fetchData(e.target.value);
 	}
 	render() {
@@ -26,7 +26,7 @@ class History extends React.Component {
 											<a
 												href="/search"
 												value={prevSearch}
-												onClick={this.getHistory}
+												onClick={this.getSearchHistory}
 											>
 												{prevSearch}
 											</a>
