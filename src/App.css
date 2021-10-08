@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+body {
+	background-color: #e7ecf5;
+	color: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	background-color: rgba(230, 41, 41, 0.753);
+	border-radius: 8px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav {
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	align-items: center;
+	padding: 5px;
+	font-size: 20px;
+	margin-top: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:any-link {
+	text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.nav > :any-link {
+	color: white;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav > :any-link:hover {
+	color: rgb(0, 124, 185);
+}
+
+:any-link:hover {
+	color: coral;
+}
+
+.search {
+	display: flex;
+	justify-content: flex-start;
+	padding: 5px;
+}
+
+input {
+	width: 200px;
+	height: 30px;
+}
+
+.history {
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+}
+
+.search-btn {
+	background-color: rgba(230, 41, 41, 0.753);
+	padding: 5px;
+	color: white;
+	width: 60px;
+	height: 30px;
+	margin: 2px;
+	border: none;
+}
+
+.search-btn:hover {
+	color: rgb(0, 124, 185);
+	cursor: pointer;
+	width: 65px;
+}
+
+.search-term-container {
+	display: flex;
+	border: 1px solid white;
+	justify-content: center;
+}
+
+.search-term {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+.results-container {
+	display: flex;
+	flex-direction: column;
+	flex-flow: wrap;
+	padding: 5px;
+}
+
+a {
+	color: rgb(0, 124, 185);
 }
